@@ -1,0 +1,58 @@
+@import './variables/variables.scss';
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    ol{
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        gap: 16px;
+        background-color: $txtBackground;
+
+        li{
+
+            padding: 20px 20px;
+            font-size: 2rem;
+            color: $secondary-color;
+            border-bottom: 1px solid #2fbdf552;
+        }
+
+        #menu__categories{
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #menu__categories-glide{
+            overflow: auto;
+            max-height: 400px;
+        }
+    }
+}
+
+#arrow-right{
+    display: flex;
+}
+
+#arrow-down{
+    display: none;
+}
+
+#menu #menu__categories-glide{
+    display: flex;
+    padding: 0px;
+
+    .categories-container{
+        width: 100%;
+        padding-top: 0px;
+        li{
+            padding: 12px 7px;
+            color: $terciary-color;
+            text-align: center;
+        }
+    }
+}

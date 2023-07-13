@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/description.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/others.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/categories-desktop.css">
+    <title>Neko Store</title>
+</head>
+<body>
+       
+    <header>
+            <h4 onclick="Home()">NekoStore</h4>
+        <div onclick="showMenu()" class="header-mobile">
+            <button></button>
+        </div>
+        <div class="header-desktop">
+            <ul>
+                <li onclick="Home()">Inicio</li>
+                <li onclick="headerCategory()">Categorias</li>
+                <li ></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        </section>
+        <section id="home">
+
+            <div class="logo-NekoStore">
+                <img src="./assets/logo/Neko-Store-logo.png" 
+                alt="Logo NekoStore">
+            </div>
+
+            <div class="media-container">
+
+                <article id="articleContainer1" href="./media.html"
+                onclick="selectSerie(1)">
+                    <img src="./assets/imgs/Kenja-No-Mago/Kenja-No-Mago-Poster.jpg" 
+                    alt="Kenja no Mago" id="articleImg1">
+                    <h3 id="articleTxt1">Kenja no Mago</h3>
+                </article>
+
+                <article id="articleContainer2"
+                onclick="selectSerie(8)">
+                    <img src="./assets/imgs/Kimetsu-No-Yaiba/Kimetsu-No-Yaiba-poster.webp" 
+                    alt="Kimetsu No Yaiba" id="articleImg2">
+                    <h3 id="articleTxt2">Kimetsu no Yaiba</h3>
+                </article>
+
+                <article id="articleContainer3"
+                onclick="selectSerie(4)">
+                    <img src="./assets/imgs/Castlevania/Castlevania-poster.webp" 
+                    alt="Castlevania" id="articleImg3">
+                    <h3 id="articleTxt3">Castlevania</h3>
+                </article>
+
+                <article id="articleContainer4"
+                onclick="selectSerie(5)">
+                    <img src="./assets/imgs/Hell´s-Paradise/Hell-paradise-poster.jpg" 
+                    alt="Hell´s Paradise" id="articleImg4">
+                    <h3 id="articleTxt4">Hell´s Paradise</h3>
+                </article>
+
+                <article id="articleContainer5"
+                onclick="selectSerie(3)">
+                    <img src="./assets/imgs/Log-horizon/Log-Horizon-poster.webp" 
+                    alt="Log Horizon" id="articleImg5">
+                    <h3 id="articleTxt5">Log horizon</h3>
+                </article>
+
+                <article id="articleContainer6"
+                onclick="selectSerie(7)">
+                    <img src="./assets/imgs/One piece/OnePiece.webp" 
+                    alt="One Piece" id="articleImg6">
+                    <h3 id="articleTxt6">One Piece</h3>
+                </article>
+
+                <article id="articleContainer7" 
+                onclick="selectSerie(2)">
+                    <img src="./assets/imgs/Overlord/overlord-poster.jpg" 
+                    alt="Overlord" id="articleImg7">
+                    <h3 id="articleTxt7">Overlord</h3>
+                </article>
+
+                <article id="articleContainer8"
+                onclick="selectSerie(6)">
+                    <img src="./assets/imgs/The-Eminence-in-Shadows/The-Eminence-in-Shadows-poster.webp" 
+                    alt="The Eminence in Shadows" id="articleImg8">
+                    <h3 id="articleTxt8">The Eminence in Shadows</h3>
+                </article>
+
+                <article id="articleContainer9"
+                onclick="selectSerie(0)">
+                    <img src="./assets/imgs/Youjo-Senki/Youjo-Senki-Poster.webp" 
+                    alt="Youjo Senki" id="articleImg9">
+                    <h3 id="articleTxt9">Youjo Senki</h3>
+                </article>
+                <article id="articleContainer9"
+                onclick="selectSerie(9)">
+                    <img src="./assets/imgs/Black-Clover/Black_Clover.webp" 
+                    alt="Black Clover" id="articleImg10">
+                    <h3 id="articleTxt10">Black Clover</h3>
+                </article>
+
+            </div>
+
+
+        </section>
+
+        <section id="serie-description">
+            <div class="serie-description__head">
+                <picture>
+                    <img id="serie-description__img"
+                    alt="titulo img">
+                </picture>
+                <h2 id="serie-description__title"></h2>
+            </div>
+
+            <div class="serie-description__info">
+                <h3 id="serie-description__txt"></h3>
+            </div>
+            
+            <div class="serie-description__caps">
+                <div id="serie-description__season">
+                    <div>
+                        <span id="seasonSelect1" class="seasonSelect"></span>
+                        <button id="T1" class="serie-description__season"
+                        onclick="setSeason(0)">Temporada 1</button>
+                    </div>
+
+                    <div>
+                        <span id="seasonSelect2" class="seasonSelect"></span>
+                        <button id="T2" class="serie-description__season"
+                        onclick="setSeason(1)">Temporada 2</button>
+                    </div>
+
+                    <div>
+                        <span id="seasonSelect3" class="seasonSelect"></span>
+                        <button id="T3" class="serie-description__season"
+                        onclick="setSeason(2)">Temporada 3</button>
+                    </div>
+
+                    <div>
+                        <span id="seasonSelect4" class="seasonSelect"></span>
+                        <button id="T4" class="serie-description__season"
+                        onclick="setSeason(3)">Temporada 4</button>
+                    </div>
+
+                    <div>
+                        <span id="seasonSelect5" class="seasonSelect"></span>
+                        <button id="T5" class="serie-description__season"
+                        onclick="setSeason(4)">Especial</button>
+                    </div>
+
+                </div>
+                <ol>
+                    <li onclick="showCap(1)" id="ep1"></li>
+                    <li onclick="showCap(2)" id="ep2"></li>
+                    <li onclick="showCap(3)" id="ep3"></li>
+                    <li onclick="showCap(4)" id="ep4"></li>
+                    <li onclick="showCap(5)" id="ep5"></li>
+                    <li onclick="showCap(6)" id="ep6"></li>
+                    <li onclick="showCap(7)" id="ep7"></li>
+                    <li onclick="showCap(8)" id="ep8"></li>
+                    <li onclick="showCap(9)" id="ep9"></li>
+                    <li onclick="showCap(10)" id="ep10"></li>
+                    <li onclick="showCap(11)" id="ep11"></li>
+                    <li onclick="showCap(12)" id="ep12"></li>
+                    <li onclick="showCap(13)" id="ep13"></li>
+                    <li onclick="showCap(14)" id="ep14"></li>
+                    <li onclick="showCap(15)" id="ep15"></li>
+                    <li onclick="showCap(16)" id="ep16"></li>
+                    <li onclick="showCap(17)" id="ep17"></li>
+                    <li onclick="showCap(18)" id="ep18"></li>
+                    <li onclick="showCap(19)" id="ep19"></li>
+                    <li onclick="showCap(20)" id="ep20"></li>
+                    <li onclick="showCap(21)" id="ep21"></li>
+                    <li onclick="showCap(22)" id="ep22"></li>
+                    <li onclick="showCap(23)" id="ep23"></li>
+                    <li onclick="showCap(24)" id="ep24"></li>
+                    <li onclick="showCap(25)" id="ep25"></li>
+                    <li onclick="showCap(26)" id="ep26"></li>
+                    <li onclick="showCap(27)" id="ep27"></li>
+                    <li onclick="showCap(28)" id="ep28"></li>
+                    <li onclick="showCap(29)" id="ep29"></li>
+                    <li onclick="showCap(30)" id="ep30"></li>
+                    <li onclick="showCap(31)" id="ep31"></li>
+                    <li onclick="showCap(32)" id="ep32"></li>
+                    <li onclick="showCap(33)" id="ep33"></li>
+                    <li onclick="showCap(34)" id="ep34"></li>
+                    <li onclick="showCap(35)" id="ep35"></li>
+                    <li onclick="showCap(36)" id="ep36"></li>
+                    <li onclick="showCap(37)" id="ep37"></li>
+                    <li onclick="showCap(38)" id="ep38"></li>
+                    <li onclick="showCap(39)" id="ep39"></li>
+                    <li onclick="showCap(40)" id="ep40"></li>
+                    <li onclick="showCap(41)" id="ep41"></li>
+                    <li onclick="showCap(42)" id="ep42"></li>
+                    <li onclick="showCap(43)" id="ep43"></li>
+                    <li onclick="showCap(44)" id="ep44"></li>
+                    <li onclick="showCap(45)" id="ep45"></li>
+                    <li onclick="showCap(46)" id="ep46"></li>
+                    <li onclick="showCap(47)" id="ep47"></li>
+                    <li onclick="showCap(48)" id="ep48"></li>
+                    <li onclick="showCap(49)" id="ep49"></li>
+                    <li onclick="showCap(50)" id="ep50"></li>
+                    <li onclick="showCap(51)" id="ep51"></li>
+                    <li onclick="showCap(52)" id="ep52"></li>
+                    <li onclick="showCap(53)" id="ep53"></li>
+                    <li onclick="showCap(54)" id="ep54"></li>
+                    <li onclick="showCap(55)" id="ep55"></li>
+                    <li onclick="showCap(56)" id="ep56"></li>
+                    <li onclick="showCap(57)" id="ep57"></li>
+                    <li onclick="showCap(58)" id="ep58"></li>
+                    <li onclick="showCap(59)" id="ep59"></li>
+                    <li onclick="showCap(60)" id="ep60"></li>
+                    <li onclick="showCap(61)" id="ep61"></li>
+                    <li onclick="showCap(62)" id="ep62"></li>
+                    <li onclick="showCap(63)" id="ep63"></li>
+                    <li onclick="showCap(64)" id="ep64"></li>
+                    <li onclick="showCap(65)" id="ep65"></li>
+                    <li onclick="showCap(66)" id="ep66"></li>
+                    <li onclick="showCap(67)" id="ep67"></li>
+                    <li onclick="showCap(68)" id="ep68"></li>
+                    <li onclick="showCap(69)" id="ep69"></li>
+                    <li onclick="showCap(70)" id="ep70"></li>
+                    <li onclick="showCap(71)" id="ep71"></li>
+                    <li onclick="showCap(72)" id="ep72"></li>
+                    <li onclick="showCap(73)" id="ep73"></li>
+                    <li onclick="showCap(74)" id="ep74"></li>
+                    <li onclick="showCap(75)" id="ep75"></li>
+                    <li onclick="showCap(76)" id="ep76"></li>
+                    <li onclick="showCap(77)" id="ep77"></li>
+                    <li onclick="showCap(78)" id="ep78"></li>
+                    <li onclick="showCap(79)" id="ep79"></li>
+                    <li onclick="showCap(80)" id="ep80"></li>
+                    <li onclick="showCap(81)" id="ep81"></li>
+                    <li onclick="showCap(82)" id="ep82"></li>
+                    <li onclick="showCap(83)" id="ep83"></li>
+                    <li onclick="showCap(84)" id="ep84"></li>
+                    <li onclick="showCap(85)" id="ep85"></li>
+                    <li onclick="showCap(86)" id="ep86"></li>
+                    <li onclick="showCap(87)" id="ep87"></li>
+                    <li onclick="showCap(88)" id="ep88"></li>
+                    <li onclick="showCap(89)" id="ep89"></li>
+                    <li onclick="showCap(90)" id="ep90"></li>
+                    <li onclick="showCap(91)" id="ep91"></li>
+                    <li onclick="showCap(92)" id="ep92"></li>
+                    <li onclick="showCap(93)" id="ep93"></li>
+                    <li onclick="showCap(94)" id="ep94"></li>
+                    <li onclick="showCap(95)" id="ep95"></li>
+                    <li onclick="showCap(96)" id="ep96"></li>
+                    <li onclick="showCap(97)" id="ep97"></li>
+                    <li onclick="showCap(98)" id="ep98"></li>
+                    <li onclick="showCap(99)" id="ep99"></li>
+                    <li onclick="showCap(100)" id="ep100"></li>
+                    <li onclick="showCap(101)" id="ep101"></li>
+                    <li onclick="showCap(102)" id="ep102"></li>
+                    <li onclick="showCap(103)" id="ep103"></li>
+                    <li onclick="showCap(104)" id="ep104"></li>
+                    <li onclick="showCap(105)" id="ep105"></li>
+                    <li onclick="showCap(106)" id="ep106"></li>
+                    <li onclick="showCap(107)" id="ep107"></li>
+                    <li onclick="showCap(108)" id="ep108"></li>
+                    <li onclick="showCap(109)" id="ep109"></li>
+                    <li onclick="showCap(110)" id="ep110"></li>
+                    <li onclick="showCap(111)" id="ep111"></li>
+                    <li onclick="showCap(112)" id="ep112"></li>
+                    <li onclick="showCap(113)" id="ep113"></li>
+                    <li onclick="showCap(114)" id="ep114"></li>
+                    <li onclick="showCap(115)" id="ep115"></li>
+                    <li onclick="showCap(116)" id="ep116"></li>
+                    <li onclick="showCap(117)" id="ep117"></li>
+                    <li onclick="showCap(118)" id="ep118"></li>
+                    <li onclick="showCap(119)" id="ep119"></li>
+                    <li onclick="showCap(120)" id="ep120"></li>
+                    <li onclick="showCap(121)" id="ep121"></li>
+                    <li onclick="showCap(122)" id="ep122"></li>
+                    <li onclick="showCap(123)" id="ep123"></li>
+                    <li onclick="showCap(124)" id="ep124"></li>
+                    <li onclick="showCap(125)" id="ep125"></li>
+                    <li onclick="showCap(126)" id="ep126"></li>
+                    <li onclick="showCap(127)" id="ep127"></li>
+                    <li onclick="showCap(128)" id="ep128"></li>
+                    <li onclick="showCap(129)" id="ep129"></li>
+                    <li onclick="showCap(130)" id="ep130"></li>
+                    <li onclick="showCap(131)" id="ep131"></li>
+                    <li onclick="showCap(132)" id="ep132"></li>
+                    <li onclick="showCap(133)" id="ep133"></li>
+                    <li onclick="showCap(134)" id="ep134"></li>
+                    <li onclick="showCap(135)" id="ep135"></li>
+                    <li onclick="showCap(136)" id="ep136"></li>
+                    <li onclick="showCap(137)" id="ep137"></li>
+                    <li onclick="showCap(138)" id="ep138"></li>
+                    <li onclick="showCap(139)" id="ep139"></li>
+                    <li onclick="showCap(140)" id="ep140"></li>
+                    <li onclick="showCap(141)" id="ep141"></li>
+                    <li onclick="showCap(142)" id="ep142"></li>
+                    <li onclick="showCap(143)" id="ep143"></li>
+                    <li onclick="showCap(144)" id="ep144"></li>
+                    <li onclick="showCap(145)" id="ep145"></li>
+                    <li onclick="showCap(146)" id="ep146"></li>
+                    <li onclick="showCap(147)" id="ep147"></li>
+                    <li onclick="showCap(148)" id="ep148"></li>
+                    <li onclick="showCap(149)" id="ep149"></li>
+                    <li onclick="showCap(150)" id="ep150"></li>
+                    <li onclick="showCap(151)" id="ep151"></li>
+                    <li onclick="showCap(152)" id="ep152"></li>
+                    <li onclick="showCap(153)" id="ep153"></li>
+                    <li onclick="showCap(154)" id="ep154"></li>
+                    <li onclick="showCap(155)" id="ep155"></li>
+                    <li onclick="showCap(156)" id="ep156"></li>
+                    <li onclick="showCap(157)" id="ep157"></li>
+                    <li onclick="showCap(158)" id="ep158"></li>
+                    <li onclick="showCap(159)" id="ep159"></li>
+                    <li onclick="showCap(160)" id="ep160"></li>
+                    <li onclick="showCap(161)" id="ep161"></li>
+                    <li onclick="showCap(162)" id="ep162"></li>
+                    <li onclick="showCap(163)" id="ep163"></li>
+                    <li onclick="showCap(164)" id="ep164"></li>
+                    <li onclick="showCap(165)" id="ep165"></li>
+                    <li onclick="showCap(166)" id="ep166"></li>
+                    <li onclick="showCap(167)" id="ep167"></li>
+                    <li onclick="showCap(168)" id="ep168"></li>
+                    <li onclick="showCap(169)" id="ep169"></li>
+                    <li onclick="showCap(170)" id="ep170"></li>
+                    <li onclick="showCap(171)" id="ep171"></li>
+                    <li onclick="showCap(172)" id="ep172"></li>
+                    <li onclick="showCap(173)" id="ep173"></li>
+                    <li onclick="showCap(174)" id="ep174"></li>
+                    <li onclick="showCap(175)" id="ep175"></li>
+                    <li onclick="showCap(176)" id="ep176"></li>
+                    <li onclick="showCap(177)" id="ep177"></li>
+                    <li onclick="showCap(178)" id="ep178"></li>
+                    <li onclick="showCap(179)" id="ep179"></li>
+                    <li onclick="showCap(180)" id="ep180"></li>
+                    <li onclick="showCap(181)" id="ep181"></li>
+                    <li onclick="showCap(182)" id="ep182"></li>
+                    <li onclick="showCap(183)" id="ep183"></li>
+                    <li onclick="showCap(184)" id="ep184"></li>
+                    <li onclick="showCap(185)" id="ep185"></li>
+                    <li onclick="showCap(186)" id="ep186"></li>
+                    <li onclick="showCap(187)" id="ep187"></li>
+                    <li onclick="showCap(188)" id="ep188"></li>
+                    <li onclick="showCap(189)" id="ep189"></li>
+                    <li onclick="showCap(190)" id="ep190"></li>
+                    <li onclick="showCap(191)" id="ep191"></li>
+                    <li onclick="showCap(192)" id="ep192"></li>
+                    <li onclick="showCap(193)" id="ep193"></li>
+                    <li onclick="showCap(194)" id="ep194"></li>
+                    <li onclick="showCap(195)" id="ep195"></li>
+                    <li onclick="showCap(196)" id="ep196"></li>
+                    <li onclick="showCap(197)" id="ep197"></li>
+                    <li onclick="showCap(198)" id="ep198"></li>
+                    <li onclick="showCap(199)" id="ep199"></li>
+                    <li onclick="showCap(200)" id="ep200"></li>
+                </ol>
+            </div>
+
+        </section>
+    
+        <section id="video-player">
+            <div class="video-player-container">
+                <div class="video-player__buttons">
+                    <button id="video-player__back" onclick="videoPlayer('back')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 15L8 12M8 12L11 9M8 12H16M3 12C3 10.8181 3.23279 9.64778 3.68508 8.55585C4.13738 7.46392 4.80031 6.47177 5.63604 5.63604C6.47177 4.80031 7.46392 4.13738 8.55585 3.68508C9.64778 3.23279 10.8181 3 12 3C13.1819 3 14.3522 3.23279 15.4442 3.68508C16.5361 4.13738 17.5282 4.80031 18.364 5.63604C19.1997 6.47177 19.8626 7.46392 20.3149 8.55585C20.7672 9.64778 21 10.8181 21 12C21 14.3869 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.3869 21 12 21C9.61305 21 7.32387 20.0518 5.63604 18.364C3.94821 16.6761 3 14.3869 3 12Z" 
+                            stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <h2 id="video-player__title">Titulo</h2>
+                    <button id="video-player__next" onclick="videoPlayer('next')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 9L16 12M16 12L13 15M16 12H8M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" 
+                            stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+            </div>
+            <iframe name="video"  id="video-player__media" frameborder="0" allowfullscreen ></iframe>
+            <h3 id="media-description"></h3>
+            </div>
+        </section>
+
+        <section id="menu">
+            <ol>
+                <li onclick="Home()" id="menu__inicio">Inicio</li>
+                <li id="menu__categories" 
+                onclick="showMenuCategories()">
+                    Categorías
+                    <span>
+                        <svg id="arrow-right" width="20" height="20" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" 
+                            fill="#FFFFFF"/>
+                        </svg>
+                        <svg id="arrow-down" width="20" height="20" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.91 0.589966L6.5 5.16997L11.09 0.589966L12.5 1.99997L6.5 7.99997L0.5 1.99997L1.91 0.589966Z" 
+                            fill="#FFFFFF"/>
+                        </svg>
+                    </span>
+                </li>
+                <li id="menu__categories-glide">
+                    <ol class="categories-container">
+                        <li onclick="selectCategorie('Acción')" id="categorie__Action">Acción</li>
+                        <li onclick="selectCategorie('Aventura')" id="categorie__Adventure">Aventura</li>
+                        <li onclick="selectCategorie('Fantasía')" id="categorie__Fantasy">Fantasía</li>
+                        <li onclick="selectCategorie('Isekai')" id="categorie__Isekai">Isekai</li>
+                        <li onclick="selectCategorie('Shonen')" id="categorie__Shonen">Shonen</li>
+                        <li onclick="selectCategorie('Sobrenatural')" id="categorie__Supernatural">Sobrenatural</li>
+                    </ol>
+                </li>
+                <li id="menu__about">Sobre nosotros</li>
+            </ol>
+        </section>
+
+        <section id="categories">
+            <h2 id="categories__type-txt"></h2>
+            <div class="media-filter">
+                <article onclick="selectSerieCategory(0)" id="categorie__article1">
+                    <img id="categorie__img1"></img>
+                    <h3 id="categorie__txt1"></h3>
+                </article>
+                <article onclick="selectSerieCategory(1)" id="categorie__article2">
+                    <img id="categorie__img2"></img>
+                    <h3 id="categorie__txt2"></h3>
+                </article>
+                <article onclick="selectSerieCategory(2)" id="categorie__article3">
+                    <img id="categorie__img3"></img>
+                    <h3 id="categorie__txt3"></h3>
+                </article>
+                <article onclick="selectSerieCategory(3)" id="categorie__article4">
+                    <img id="categorie__img4"></img>
+                    <h3 id="categorie__txt4"></h3>
+                </article>
+                <article onclick="selectSerieCategory(4)" id="categorie__article5">
+                    <img id="categorie__img5"></img>
+                    <h3 id="categorie__txt5"></h3>
+                </article>
+                <article onclick="selectSerieCategory(5)" id="categorie__article6">
+                    <img id="categorie__img6"></img>
+                    <h3 id="categorie__txt6"></h3>
+                </article>
+                <article onclick="selectSerieCategory(6)" id="categorie__article7">
+                    <img id="categorie__img7"></img>
+                    <h3 id="categorie__txt7"></h3>
+                </article>
+                <article onclick="selectSerieCategory(7)" id="categorie__article8">
+                    <img id="categorie__img8"></img>
+                    <h3 id="categorie__txt8"></h3>
+                </article>
+                <article onclick="selectSerieCategory(8)" id="categorie__article9">
+                    <img id="categorie__img9"></img>
+                    <h3 id="categorie__txt9"></h3>
+                </article>
+                <article onclick="selectSerieCategory(9)" id="categorie__article10">
+                    <img id="categorie__img10"></img>
+                    <h3 id="categorie__txt10"></h3>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="categories-desktop">
+                <ol class="categories-container">
+                    <li onclick="selectCategorie('Acción')">Acción</li>
+                    <li onclick="selectCategorie('Aventura')">Aventura</li>
+                    <li onclick="selectCategorie('Fantasía')">Fantasía</li>
+                    <li onclick="selectCategorie('Isekai')">Isekai</li>
+                    <li onclick="selectCategorie('Shonen')">Shonen</li>
+                    <li onclick="selectCategorie('Sobrenatural')">Sobrenatural</li>
+                </ol>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+</html>

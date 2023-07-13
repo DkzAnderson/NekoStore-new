@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif ;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h2, h3 , p , button, li{
+    cursor: pointer;
+}
+
+article{
+    cursor: pointer;
+    h3{
+        cursor: pointer;
+    }
+}
+
+// Colors
+$primary-color: #3A74DC ;
+$secondary-color: #2FBDF5 ;
+$terciary-color: #36EBDB ;
+$txtBackground: #0c0c0ccc ;
+
+// media Queries
+
+$querie-s:  360px;
+$querie-m:  768px;
+$querie-l: 1024px;
+$querie-xl:1400px;
+
+// Mixings
+
+@mixin season-button(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-size: 2rem;
+    background-color: $primary-color;
+    color: white;
+    border: 1px solid white;
+
+    @media (min-width:$querie-l) {
+        max-width: 320px;
+        font-size: 1.8rem;
+    }
+
+}
+
+@mixin txt-titles(){
+    padding: 7px;
+    text-align: center;
+    max-width: 250px;
+    max-height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: $primary-color;
+
+}
+
+@mixin txt-subtitles(){
+    
+    padding: 7px;
+    text-align: center;
+    max-width: 250px;
+    max-height: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: $terciary-color;
+    background-color: $txtBackground;
+}
+
+@mixin txt-description(){
+    overflow: auto;
+    margin-top: 20px;
+    max-width: 300px ;
+    max-height: 500px;
+    padding: 12px;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    color: $secondary-color;
+    background-color: $txtBackground;
+}
+

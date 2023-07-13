@@ -1,0 +1,227 @@
+@import './variables/variables.scss';
+
+main #serie-description{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 440px 600px;
+    justify-items: center;
+    align-items: center;
+
+    .serie-description__head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 300px;
+        margin-top: 40px;
+            h2{
+                @include txt-subtitles();
+                cursor: default;
+                width: 90%;
+                max-width: 300px;
+            }
+            
+            picture{
+                display: flex;
+                justify-content: center;
+                #serie-description__img{
+                    width: 90%;
+                    min-width: 250px;
+                    max-width: 300px;
+                }
+
+            }
+
+        
+    }
+
+    .serie-description__info{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        h3{
+            @include txt-description();
+            cursor: default;
+        }
+    }
+
+}
+
+#serie-description__season{
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    width: 100%;
+
+    margin-bottom: 30px;
+
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    button{
+        @include season-button();
+    }
+
+    button:hover{
+        border: 1px solid $primary-color;
+        color: black;
+        background-color: $secondary-color;
+    }
+}
+
+.seasonSelect{
+    display: none;
+    background-image: url(../assets/icons/icons8-flecha-64.png);
+    width: 40px;
+    height: 31px;
+    background-size: cover;
+}
+
+.serie-description__caps{
+    width: 80%;
+    padding: 10px;
+    background-color: $txtBackground;
+    border-radius: 7px;
+
+    h2{
+        @include txt-titles();
+        max-width: 100%;
+        cursor: default;
+        margin-bottom: 5px;
+        border-bottom: 0.5px solid black;
+    }
+
+    ol{
+        overflow: auto;
+        border-radius: 3px;
+        padding: 10px;
+        width: 100%;
+        max-height: 290px;
+        margin-bottom: 50px;
+
+
+        li{
+            display: none;
+            padding: 5px 20px;
+            margin-top: 5px;
+            font-size: 1.5rem;
+            justify-content: center;
+            color: $terciary-color;
+            border: 1px solid white;
+            border-radius: 0px 10px 0px 10px;
+        }
+        
+        li:hover{
+            border: 1px solid $terciary-color;
+            color: black;
+            background-color: $primary-color;
+        }
+    }
+}
+
+@media (min-width:$querie-m) {
+
+    main #serie-description{
+        display: grid;
+        align-items: start;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "a c" 
+        "b c";
+    }
+
+    .serie-description__head{
+        grid-area: a;
+    }
+
+    .serie-description__caps{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-area: c;
+        width: 85%;
+        height: 600px;
+        max-width: 580px;
+        margin-top: 40px;
+
+        #serie-description__season {
+            margin-top: 12px;
+        }
+
+        ol{
+            max-height: 50%;
+        }
+
+        ol::-webkit-scrollbar {
+            width: 8px;     /* Tamaño del scroll en vertical */
+            height: 8px;    /* Tamaño del scroll en horizontal */ 
+            display: flex;
+        }
+
+        ol::-webkit-scrollbar-thumb {
+            background: $primary-color;
+            border-radius: 4px;
+        }
+
+        ol::-webkit-scrollbar-thumb:hover {
+            background: $secondary-color;
+            box-shadow: 0 0 2px 1px #00000033;
+        }
+
+        ol::-webkit-scrollbar-thumb:active {
+            background-color: $terciary-color;
+        }
+    }
+    
+    .serie-description__info{
+        width: 100%;
+        grid-area: b;
+    }
+
+}
+
+@media (min-width:$querie-l) {
+    main #serie-description .serie-description__head{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 30px;
+        picture{
+            width: 100%;
+            #serie-description__img{
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+
+        #serie-description__title{
+            font-size: 2.2rem;
+            width: 100%;
+            max-width: 360px;
+        }
+    }
+
+    main #serie-description .serie-description__info{
+        width: 90%;
+        h3{
+            max-width: 700px;
+            font-size: 2rem;
+            line-height: 2.2rem;
+            margin-top: -50px;
+            border-radius: 7px;
+        }
+    }
+
+    main #serie-description .serie-description__caps{
+        ol{
+            li{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+

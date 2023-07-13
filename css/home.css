@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2, h3, p, button, li {
+  cursor: pointer;
+}
+
+article {
+  cursor: pointer;
+}
+article h3 {
+  cursor: pointer;
+}
+
+body {
+  background-position: center;
+  background-image: url(../assets/backgrounds/mobile\(1\).jpg);
+}
+
+#home {
+  justify-items: center;
+}
+
+.logo-NekoStore {
+  display: none;
+}
+
+.media-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+  gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+.media-container article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr;
+  justify-items: center;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
+  height: 100%;
+  min-height: 250px;
+  max-height: 420px;
+  background-color: rgba(12, 12, 12, 0.8);
+  border-radius: 8px 8px 8px 8px;
+}
+.media-container article img {
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: 90%;
+}
+.media-container article h3 {
+  padding: 7px;
+  text-align: center;
+  max-width: 250px;
+  max-height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.2rem;
+  color: #3A74DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-container article h3:hover {
+  color: white;
+}
+
+#serie-description {
+  display: none;
+}
+
+footer {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .media-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  body {
+    background-image: url(../assets/backgrounds/desktop-s.jpg);
+  }
+}
+@media (min-width: 1024px) {
+  .media-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .logo-NekoStore {
+    width: 700px;
+  }
+  .logo-NekoStore img {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media (min-width: 1400px) {
+  .media-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 767px) {
+  .logo-NekoStore {
+    display: flex;
+    width: 500px;
+    height: 240px;
+    margin-top: 30px;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.0823529412);
+    border-radius: 20px;
+    background-color: rgba(12, 12, 12, 0.8);
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 3px 3px #36EBDB;
+    }
+    12% {
+      box-shadow: 0px 0px 6px 6px #2FBDF5;
+    }
+    25% {
+      box-shadow: 0px 0px 9px 9px #3A74DC;
+    }
+    50% {
+      box-shadow: 0px 0px 12px 12px #3A74DC;
+      border: 1px solid white;
+    }
+    62% {
+      box-shadow: 0px 0px 9px 9px #3A74DC;
+    }
+    75% {
+      box-shadow: 0px 0px 6px 6px #2FBDF5;
+    }
+    87% {
+      box-shadow: 0px 0px 3px 3px #36EBDB;
+    }
+    100% {
+      box-shadow: 0px 0px 1px 1px #36EBDB;
+    }
+  }
+  .logo-NekoStore img {
+    width: 300px;
+    height: 240px;
+  }
+}/*# sourceMappingURL=home.css.map */

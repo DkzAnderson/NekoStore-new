@@ -1,0 +1,154 @@
+@import './variables/variables.scss';
+
+body{
+    background-position: center;
+    background-image: url(../assets/backgrounds/mobile\(1\).jpg);
+    
+}
+
+#home{
+    justify-items: center;
+}
+
+.logo-NekoStore{
+    display: none;
+}
+
+.media-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 80px;
+    justify-items: center;
+    align-items: center;
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr;
+        justify-items: center;
+        width: 100%;
+        min-width: 200px;
+        max-width: 250px;
+        height: 100%;
+        min-height: 250px;
+        max-height: 420px;
+        background-color: $txtBackground;
+        border-radius: 8px 8px 8px 8px;
+        
+
+        img{
+            border-radius: 8px 8px 0px 0px ;
+            width: 100%;
+            height: 90%;
+        }
+
+        h3{
+            @include txt-titles();
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h3:hover{
+            color: white;
+        }
+
+    }
+
+}
+
+#serie-description{
+    display: none;
+}
+
+footer{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: transparent;
+}
+
+@media (min-width:$querie-m) {
+    .media-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    body{
+        background-image: url(../assets/backgrounds/desktop-s.jpg);
+    }
+}
+
+@media (min-width:$querie-l) {
+    .media-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .logo-NekoStore{
+        width: 700px;
+
+        img{
+            width: 500px;
+            height: 350px;
+        }
+    }
+
+}
+
+@media (min-width:$querie-xl) {
+    .media-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:767px) {
+    .logo-NekoStore{
+        display: flex;
+        width: 500px;
+        height: 240px;
+        margin-top: 30px;
+        justify-content: center;
+        border: 1px solid #ffffff15;
+        border-radius: 20px;
+        background-color: $txtBackground;
+
+        animation-name: pulse;      // nombre para la animacion
+        animation-duration: 3s;     // duracion
+        animation-iteration-count: infinite;    // veces que se repetira
+        animation-direction: reverse;   // direccion en la que ira la animacion
+        animation-timing-function: linear;  // si la animacion sera fluida , rapida o lenta
+
+        @keyframes pulse {
+            0%{
+                box-shadow: 0px 0px 3px 3px $terciary-color;
+            }
+            12%{
+                box-shadow: 0px 0px 6px 6px $secondary-color;
+            }
+            25%{
+                box-shadow: 0px 0px 9px 9px $primary-color;
+            }
+            50%{
+                box-shadow: 0px 0px 12px 12px $primary-color;
+                border: 1px solid white;
+            }
+            62%{
+                box-shadow: 0px 0px 9px 9px $primary-color;
+            }
+            75%{
+                box-shadow: 0px 0px 6px 6px $secondary-color;
+            }
+            87%{
+                box-shadow: 0px 0px 3px 3px $terciary-color;
+            }
+            100%{
+                box-shadow: 0px 0px 1px 1px $terciary-color;
+            }
+        }
+
+        img{
+            width: 300px;
+            height: 240px;
+        }
+    }
+}

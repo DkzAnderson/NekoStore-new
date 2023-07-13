@@ -1,0 +1,77 @@
+@import './variables/variables.scss';
+
+#categories {
+    display: grid;
+    justify-items: center
+}
+
+h2{
+    @include txt-titles();
+    margin-top: 16px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 50px;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    color: $secondary-color;
+}
+
+
+#categories .media-filter {
+
+    display: grid;
+    gap: 80px;
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 1fr;
+        justify-items: center;
+        width: 100%;
+        min-width: 250px;
+        max-width: 250px;
+        height: 100%;
+        min-height: 480px;
+        max-height: 500px;
+        background-color: $txtBackground;
+        border-radius: 8px 8px 8px 8px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        } 
+
+        h3{
+            @include txt-titles();
+        }
+
+        h3:hover{
+            color: white;
+        }
+    }
+}
+
+@media (min-width:$querie-m) {
+    #categories h2{
+        font-size: 3rem;
+        max-width: 600px;
+    }
+    #categories .media-filter {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:$querie-l) {
+
+    #categories .media-filter{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:$querie-xl) {
+    #categories .media-filter{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
