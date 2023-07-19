@@ -1150,7 +1150,7 @@ let OnePiece = new serie("One piece",
 ]
 
 ]);
-]);
+  
 let KimetsuNoYaiba = new serie("Kimetsu no Yaiba",
 "Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana la vida vendiendo carbón, descubre un día que su " +  
 "familia ha sido asesinada por un demonio. Para empeorar las cosas, su hermana menor Nezuko, la única superviviente" + 
