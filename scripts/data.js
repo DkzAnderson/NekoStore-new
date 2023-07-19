@@ -757,8 +757,10 @@ let OnePiece = new serie("One piece",
     "https://terabox.com/sharing/embed?surl=oIeMBBRxOfiCR_W3yNulvg&resolution=720",
     "https://terabox.com/sharing/embed?surl=NXanwJhLL9fxZO2mYyHH8Q&resolution=720",
     "https://terabox.com/sharing/embed?surl=AaFcaelew46UlqAhOPCgSg&resolution=720",
-    "https://terabox.com/sharing/embed?surl=fOgPgwm7w8sdpyG0S_5_9w&resolution=720",
-[   //arco three
+    "https://terabox.com/sharing/embed?surl=fOgPgwm7w8sdpyG0S_5_9w&resolution=720"
+    ],
+    
+    [   //arco three
     "https://terabox.com/sharing/embed?surl=B0Za3jJEOSf9nFSprfFZBw&resolution=720",
     "https://terabox.com/sharing/embed?surl=7uJlHXLOS1x47cqR3FsUUw&resolution=720",
     "https://terabox.com/sharing/embed?surl=l1Y4-AzHJnlMIfiFqA2Xeg&resolution=720",
@@ -830,9 +832,9 @@ let OnePiece = new serie("One piece",
     "https://terabox.com/sharing/embed?surl=fxgNAaZi-2WAlShJCIIvuQ&resolution=720",
     "https://terabox.com/sharing/embed?surl=cy1wjG0opzRm_eqKQV2AFA&resolution=720",
     "https://terabox.com/sharing/embed?surl=hZtdPDiigdSqimsmQ0bBFQ&resolution=720",
-], 
+    ], 
 
-[ //arco four
+    [ //arco four
     "https://terabox.com/sharing/embed?surl=DNsXwK4E0b48Jh5M1V-QDw&resolution=720",
     "https://terabox.com/sharing/embed?surl=IYEQ6WZId-bHD9VtLAa84Q&resolution=720",
     "https://terabox.com/sharing/embed?surl=4jrtVHeXPVPr1d0Z8vPYHQ&resolution=720",
@@ -952,8 +954,9 @@ let OnePiece = new serie("One piece",
     "https://terabox.com/sharing/embed?surl=FLj-CfSZCj30LQnoS0tdrg&resolution=720",
     "https://terabox.com/sharing/embed?surl=PQ4krkl4ce0NVvV4qjU2qQ&resolution=720",
     "https://terabox.com/sharing/embed?surl=HWuuW5PYaxwLsguTP8y8NA&resolution=720",
-]
-[   //arco three
+    ],
+    
+    [   //arco three
     "https://terabox.com/sharing/embed?surl=B0Za3jJEOSf9nFSprfFZBw&resolution=720",
     "https://terabox.com/sharing/embed?surl=7uJlHXLOS1x47cqR3FsUUw&resolution=720",
     "https://terabox.com/sharing/embed?surl=l1Y4-AzHJnlMIfiFqA2Xeg&resolution=720",
@@ -1025,9 +1028,9 @@ let OnePiece = new serie("One piece",
     "https://terabox.com/sharing/embed?surl=fxgNAaZi-2WAlShJCIIvuQ&resolution=720",
     "https://terabox.com/sharing/embed?surl=cy1wjG0opzRm_eqKQV2AFA&resolution=720",
     "https://terabox.com/sharing/embed?surl=hZtdPDiigdSqimsmQ0bBFQ&resolution=720",
-], 
+    ], 
 
-[ //arco four
+    [ //arco four
     "https://terabox.com/sharing/embed?surl=DNsXwK4E0b48Jh5M1V-QDw&resolution=720",
     "https://terabox.com/sharing/embed?surl=IYEQ6WZId-bHD9VtLAa84Q&resolution=720",
     "https://terabox.com/sharing/embed?surl=4jrtVHeXPVPr1d0Z8vPYHQ&resolution=720",
@@ -1147,7 +1150,7 @@ let OnePiece = new serie("One piece",
     "https://terabox.com/sharing/embed?surl=FLj-CfSZCj30LQnoS0tdrg&resolution=720",
     "https://terabox.com/sharing/embed?surl=PQ4krkl4ce0NVvV4qjU2qQ&resolution=720",
     "https://terabox.com/sharing/embed?surl=HWuuW5PYaxwLsguTP8y8NA&resolution=720",
-]
+    ]
 
 ]);
   
